@@ -1,2 +1,2 @@
 # ipynb-netflix
-A PostgreSQL/python analysis of the Netflix database available in datacamp's datalab. Since the SQL database is only available for datalab registered users, this is a merely static project, and the notebook cells can't be rerun.
+A PostgreSQL/python analysis of the Netflix database available in datacamp's [datalab](https://www.bing.com/ck/a?!&&p=832c96cd0b6ed201JmltdHM9MTcxNjQyMjQwMCZpZ3VpZD0zZjI5Y2Q4Yy1iOTFhLTYxZTQtMDMxMy1kOTBiYjg2ZDYwODcmaW5zaWQ9NTIwMA&ptn=3&ver=2&hsh=3&fclid=3f29cd8c-b91a-61e4-0313-d90bb86d6087&psq=datalab+datacamp&u=a1aHR0cHM6Ly93d3cuZGF0YWNhbXAuY29tL2RhdGFsYWI&ntb=1). Since the SQL database is only available for datalab registered users, this is a merely static project, and the notebook cells can't be rerun.
