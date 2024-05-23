@@ -25,7 +25,7 @@ Through the querying of the <strong>Competition Netflix Top 10</strong> PostgreS
 ### Table head<a id="head"></a>
 
 
-```python
+```sql
 SELECT *
 FROM all_weeks_countries
 LIMIT 5;
@@ -127,13 +127,13 @@ LIMIT 5;
 ### Unique years<a id="years"></a>
 
 
-```python
+```sql
 WITH years AS (
-	SELECT DISTINCT EXTRACT(YEAR FROM week) as year
+	SELECT DISTINCT EXTRACT(YEAR FROM week) AS year
 	FROM all_weeks_countries
 )
 
-SELECT STRING_AGG(year :: TEXT, ', ') as years
+SELECT STRING_AGG(year :: TEXT, ', ') AS years
 FROM years;
 ```
 
@@ -175,7 +175,7 @@ FROM years;
 ### Number of shows and countries<a id="nums"></a>
 
 
-```python
+```sql
 SELECT COUNT(DISTINCT show_title) AS num_shows
 FROM all_weeks_countries;
 ```
@@ -216,7 +216,7 @@ FROM all_weeks_countries;
 
 
 
-```python
+```sql
 SELECT COUNT(DISTINCT country_name) AS num_countries
 FROM all_weeks_countries;
 ```
@@ -259,23 +259,22 @@ FROM all_weeks_countries;
 ### Most frequent shows in the top 3 (> 100 occurrences)<a id=">100"></a>
 
 
-```python
+```sql
 WITH top_3 AS (
 	
 	SELECT
 		country_name AS country,
 		EXTRACT(YEAR FROM week) AS year,
 		category,
-		show_title as title,
+		show_title AS title,
 		COUNT(show_title) OVER (
 			PARTITION BY
 				show_title,
-				EXTRACT(YEAR FROM week)) as title_count
+				EXTRACT(YEAR FROM week)) AS title_count
 	
 	FROM all_weeks_countries
 	
-	WHERE
-		weekly_rank <= 3
+	WHERE weekly_rank <= 3
 )
 
 SELECT
@@ -431,11 +430,11 @@ ax.get_xaxis().set_visible(False)
 ## Netflix employees by role and department<a id="employees"></a>
 
 
-```python
+```sql
 SELECT
 	COALESCE(role, 'All') AS role,
 	COALESCE(department_name, 'All') AS department,
-	COUNT(*) as employee_count
+	COUNT(*) AS employee_count
 
 FROM
 	employees AS e
