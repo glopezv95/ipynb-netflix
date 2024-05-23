@@ -1,16 +1,13 @@
-# Pivot tables and rollups. Netflix top shows database<a id="title"></a>
+# Netflix top shows database<a id="title"></a>
 
 <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHYlMjBzaG93c3xlbnwwfHwwfHx8MA%3D%3D" alt="Television" />
 <br/>
-<div>
-    Founded in 1997 as a movie rental company, <a href= "https://www.netflix.com/browse"><strong>Netflix</strong></a> made a pivotal change in its marketing strategy in the year 2007 when its founders, <strong>Reed Hastings</strong> and <strong>Marc Randolph</strong>, decided to reinvent the company and focus on online video streaming.
-</div>
-<div>
-    Since then, the company has remained as one of the top players in the industry, having an estimated <strong>yearly economic net profit</strong> of <em>373.4 million USD</em> and <em>1850 million USD</em> in <strong>social capital</strong>.
-</div>
-<div>
-    Through the querying of the <strong>Competition Netflix Top 10</strong> PostgreSQL database, this analysis focuses on retrieving a series of relevant indicators, summary tables and plots from Netflix's 2021 and 2022 top shows data, as well as a mockup table of Netflix employees.
-</div>
+<p style="text-align:justify">
+Founded in 1997 as a movie rental company, <a href= "https://www.netflix.com/browse"><strong>Netflix</strong></a> made a pivotal change in its marketing strategy in the year 2007 when its founders, <strong>Reed Hastings</strong> and <strong>Marc Randolph</strong>, decided to reinvent the company and focus on online video streaming. Since then, the company has remained as one of the top players in the industry, having an estimated <strong>yearly economic net profit</strong> of <em>373.4 million USD</em> and <em>1850 million USD</em> in <strong>social capital</strong>.
+<br/>
+<br/>	
+Through the querying of the <strong>Competition Netflix Top 10</strong> PostgreSQL database, this analysis focuses on retrieving a series of relevant indicators, summary tables and plots from Netflix's 2021 and 2022 top shows data, as well as a mockup table of Netflix employees.
+</p>
 
 ## Table of contents
 [Weekly show rankings](#rankings)
@@ -23,7 +20,7 @@
 
 [Netflix empoyees by role and department](#employees)
 
-## Weekly show rankings<a id="ranks"></a>
+## Weekly show rankings<a id="rankings"></a>
 
 ### Table head<a id="head"></a>
 
